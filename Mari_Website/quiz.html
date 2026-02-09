@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div id="container"> 
+        <div id="header">
+
+            <div id="title">
+                <img src="./logo/epo_logo.png" alt="logo" height="50px">
+                <div id="title_name">
+                    THE DIVERSITY PROJECT
+                </div><!-- title_name -->
+            </div><!-- title -->
+
+            <div id="navigation">
+                <div class="relative dropdown">
+                    <button class="dropbtn">Navigation bar</button>
+                    <div class="absolute hidden dropdown-content">
+                        <a href="home.html">Home</a>
+                        <a href="multicultural.html">I am a Multicultural Student</a>
+                        <a href="monocultural.html">I am a Monocultural Student</a>
+                    </div><!-- dropdown-content -->
+                </div><!-- dropbtn -->
+            </div> <!-- navigation -->
+
+
+        </div><!-- header -->
+    
+
+        <div id="main">
+            <h1>Fun Facts Series</h1>
+                
+            <div id="submain">
+                <p>
+                    Ever wonder if you’re seeing the full picture or just your own corner of the map? This quiz is a quick way to test your cultural IQ and see how people across the globe actually navigate life.  Give it a go—you might realize the world is a lot bigger than you thought.
+                </p>
+                <br>
+                <div class="img_border" style="border-color:#efb044;">
+                    <form>
+                        <div id="q1">
+                            <p class="quiz-msg">Q1/5. In Germany, punctuality is a big deal. If a meeting is set for 2:00 PM, what is the socially expected time to arrive?</p>
+
+                            <label class="quiz-option"><input type="radio" name="q1" value="2:30">Exactly 2:30 PM</label>
+                            <label class="quiz-option"><input type="radio" name="q1" value="2:15">2:15 PM (It's polite to give the host extra time)</label>
+                            <label class="quiz-option"><input type="radio" name="q1" value="1:55">1:55 (Being a few minutes early is considered on time)</label>
+                            <label class="quiz-option"><input type="radio" name="q1" value="1:45">1:45 (Helping set the venue up even as a guest is an unspoken rule)</label>
+
+
+                            <div class="quiz-btns">
+                                <button  class="quiz-next" type="button" onclick="return nextQuiz(1,false);">Next</button>
+                            </div><!-- quiz-btns -->
+                        </div><!-- q1 -->
+
+                        <div id="q2" class="hidden">
+                            <p class="quiz-msg">Q2/5. In many collectivist cultures like Vietnam or China, if a group of friends go out to dinner, how is the bill usually handled?</p>
+
+                            <label class="quiz-option"><input type="radio" name="q2" value="individual">Everyone calculates exactly what they ate and pays for themselves</label>
+                            <label class="quiz-option"><input type="radio" name="q2" value="wheel">They spin the wheel to decide who pays</label>
+                            <label class="quiz-option"><input type="radio" name="q2" value="one">One person pays for the whole group to show hospitality</label>
+                            <label class="quiz-option"><input type="radio" name="q2" value="youngest">The youngest person is expected to pay for the elders</label>
+
+                            <div class="quiz-btns">
+                                <button  class="quiz-next" type="button" onclick="return nextQuiz(2,false);">Next</button>
+                            </div><!-- quiz-btns -->
+                        </div><!-- q2 -->
+
+                        <div id="q3" class="hidden">
+                            <p class="quiz-msg">Q3/5. In the US, people often use high-context, friendly phrases like "We should grab coffee sometime! What does this usually mean?</p>
+
+                            <label class="quiz-option"><input type="radio" name="q3" value="code">A secret code for something else</label>
+                            <label class="quiz-option"><input type="radio" name="q3" value="business">A formal business contract</label>
+                            <label class="quiz-option"><input type="radio" name="q3" value="invitation">A literal invitation to go to a cafe right now</label>
+                            <label class="quiz-option"><input type="radio" name="q3" value="end">A polite way to end a conversation</label>
+
+                            <div class="quiz-btns">
+                                <button class="quiz-next" type="button" onclick="return nextQuiz(3,false);">Next</button>
+                            </div><!-- quiz-btns -->
+                        </div><!-- q3 -->
+
+                        <div id="q4" class="hidden">
+                            <p class="quiz-msg">Q4/5. In many West African cultures, how is direct eye contact with an elder or a person in authority usually viewed?</p>
+
+                            <label class="quiz-option"><input type="radio" name="q4" value="honesty">As sign of honesty and confidence</label>
+                            <label class="quiz-option"><input type="radio" name="q4" value="requirement">As a requirement for a legal conversation</label>
+                            <label class="quiz-option"><input type="radio" name="q4" value="bored">As a way to show you are bored</label>
+                            <label class="quiz-option"><input type="radio" name="q4" value="disrespect">As a sign of disrespect or a challenge to their authority</label>
+
+                            <div class="quiz-btns">
+                                <button class="quiz-next" type="button" onclick="return nextQuiz(4,false);">Next</button>
+                            </div><!-- quiz-btns -->
+                        </div><!-- q4 -->
+
+                        <div id="q5" class="hidden">
+                            <p class="quiz-msg">Q5/5. During a traditional Quinceañera, the "Ceremony of the 15 Candles" involves the birthday girl giving a candle to the 15 people who have most impacted her life. What does this tradition symbolize about adulthood in many South American cultures?</p>
+
+                            <label class="quiz-option"><input type="radio" name="q5" value="ritual">A ritual to pass her childhood responsibilities back to the younger members of the family</label>
+                            <label class="quiz-option"><input type="radio" name="q5" value="debt">The successful completion of a social debt to her elders before she begins her own life</label>
+                            <label class="quiz-option"><input type="radio" name="q5" value="demonstration">A public demonstration of the girl's new authority to lead her own houshold</label>
+                            <label class="quiz-option"><input type="radio" name="q5" value="affirmation">The affirmation that adult identity is built through community rather than independence</label>
+
+                            <div class="quiz-btns">
+                                <button class="quiz-next" type="button" onclick="return nextQuiz(5,true);">Next</button>
+                            </div><!-- quiz-btns -->
+                        </div><!-- q5 -->
+
+                        <div id="q6" class="hidden">
+                            <h2>YOUR RESULTS</h2>
+                            <div id="result"></div>
+                            <br>
+                            <div id="answer-q1"></div>
+                            <div id="answer-q2"></div>
+                            <div id="answer-q3"></div>
+                            <div id="answer-q4"></div>
+                            <div id="answer-q5"></div>
+                            
+                            <br>
+
+                            <div id="final_msg"></div>
+                            
+                            <p>Improve your score or simply enjoy taking the quiz again by clicking the button below!</p>
+                            <div class="quiz-btns">
+                                <button class="quiz-next" type="button" onclick="location.reload();">Reload</button>
+                            </div><!-- quiz-btns -->
+
+                            
+
+                        </div><!-- q6 -->
+
+                    </form>
+                </div><!-- img_border -->
+            </div> <!-- submain -->
+        </div><!-- main -->
+    </div><!-- container -->
+
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
